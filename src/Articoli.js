@@ -15,9 +15,9 @@ class Articoli extends Component {
   render() {
     const {articoli} = this.state
     console.log(articoli)
-    const ArticoliList = articoli.map(({id, titolo, contenuto_introduttivo}) =>
-      <li className='Articoli-item' key={id}>
-        <Link to={`/articoli/${id}`}>{titolo}</Link>
+    const ArticoliList = articoli.map(({articolo_id, titolo, contenuto_introduttivo}) =>
+      <li className='Articoli-item' key={articolo_id}>
+        <Link to={`/articoli/${articolo_id}`}>{titolo}</Link>
         <p>{contenuto_introduttivo}</p>
       </li>
     )
