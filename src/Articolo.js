@@ -16,7 +16,7 @@ class Articolo extends Component {
 
     return (
       <div className='Articolo'>
-        <h1>{title}</h1>
+        <h1>{titolo}</h1>
         <h2>Questo è il contenuto introduttivo</h2>
         <p>{contenuto_introduttivo}</p>
         <br/>
