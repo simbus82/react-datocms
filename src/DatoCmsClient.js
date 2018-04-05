@@ -1,6 +1,6 @@
 import { SiteClient, Image } from 'datocms-client'
 
-const DATOCMS_CLIENT = '99644b5eaa4af54e85bb'
+const DATOCMS_CLIENT = 'bf8202fda53e8401c21c51f513ce82'
 
 class DatoCmsClient {
   constructor () {
