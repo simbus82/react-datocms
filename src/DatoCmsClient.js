@@ -7,11 +7,11 @@ class DatoCmsClient {
     this.client = new SiteClient(DATOCMS_CLIENT)
   }
 
-  getFilms = () =>
-    this.client.items.all({ 'filter[type]': 'film' })
+  getArticoli = () =>
+    this.client.items.all({ 'filter[type]': 'articolo' })
 
-  getFilm = (filmId) =>
-    this.client.items.find(filmId)
+  getArticolo = (articoloId) =>
+    this.client.items.find(articoloId)
 }
 
 export default new DatoCmsClient()
