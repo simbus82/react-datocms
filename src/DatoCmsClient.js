@@ -1,4 +1,4 @@
-import { SiteClient, Image } from 'datocms-client'
+import { SiteClient } from 'datocms-client'
 
 const DATOCMS_CLIENT = 'bf8202fda53e8401c21c51f513ce82'
 
