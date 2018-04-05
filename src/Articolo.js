@@ -21,7 +21,7 @@ class Articolo extends Component {
         <p>{contenuto_introduttivo}</p>
         <br/>
         <h2>Questo è il contenuto principale</h2>
-        <p>{contenuto_introduttivo}</p>
+        <p>{contenuto_principale}</p>
         <br/>
       </div>
     )
