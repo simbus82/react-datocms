@@ -11,7 +11,7 @@ class DatoCmsClient {
     this.client.items.all({ 'filter[type]': 'articolo' })
 
   getArticolo = (articoloId) =>
-    this.client.items.find(articoloId)
+    this.client.items.find(id)
 }
 
 export default new DatoCmsClient()
