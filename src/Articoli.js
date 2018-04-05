@@ -3,6 +3,7 @@ import { Link} from 'react-router'
 import datocmsClient from './DatoCmsClient'
 
 class Articoli extends Component {
+  
   state = {
     articoli: []
   }
@@ -13,6 +14,7 @@ class Articoli extends Component {
   }
 
   render() {
+    
     const {articoli} = this.state
     console.log('Articoli.js ->', articoli)
     const ArticoliList = articoli.map(({articolo_id, titolo, contenuto_introduttivo}) =>
@@ -21,13 +23,15 @@ class Articoli extends Component {
         <p>{contenuto_introduttivo}</p>
       </li>
     )
-
+    console.log('Articoli.js ->', ArticoliList)
     return (
       <ul className="Articoli">
         {ArticoliList}
       </ul>
     );
+
   }
+
 }
 
 export default Articoli;
