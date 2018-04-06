@@ -12,16 +12,16 @@ class Articolo extends Component {
   }
 
   render () {
-    const { titolo, contenuto_introduttivo, contenuto_principale } = this.state.articolo
+    const { titolo, contenutoIntroduttivo, contenutoPrincipale } = this.state.articolo
 
     return (
       <div className='Articolo'>
         <h1>{titolo}</h1>
         <h2>Questo è il contenuto introduttivo</h2>
-        <p>{contenuto_introduttivo}</p>
+        <p>{contenutoIntroduttivo}</p>
         <br/>
         <h2>Questo è il contenuto principale</h2>
-        <p>{contenuto_principale}</p>
+        <p>{contenutoPrincipale}</p>
         <br/>
       </div>
     )
