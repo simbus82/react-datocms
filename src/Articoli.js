@@ -17,9 +17,9 @@ class Articoli extends Component {
     
     const {articoli} = this.state
     console.log('Articoli.js ->', articoli)
-    const ArticoliList = articoli.map(({index, titolo, contenutoIntroduttivo}) =>
-      <li className='Articoli-item' key={index}>
-        <Link to={`/articoli/${index}`}>{titolo}</Link>
+    const ArticoliList = articoli.map(({articoloId, titolo, contenutoIntroduttivo}) =>
+      <li className='Articoli-item' key={articoloId}>
+        <Link to={`/articoli/${articoloId}`}>{titolo}</Link>
         <p>{contenutoIntroduttivo}</p>
       </li>
     )
