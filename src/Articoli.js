@@ -17,10 +17,10 @@ class Articoli extends Component {
     
     const {articoli} = this.state
     console.log('Articoli.js ->', articoli)
-    const ArticoliList = articoli.map(({index, titolo, contenuto_introduttivo}) =>
+    const ArticoliList = articoli.map(({index, titolo, contenutoIntroduttivo}) =>
       <li className='Articoli-item' key={index}>
         <Link to={`/articoli/${index}`}>{titolo}</Link>
-        <p>{contenuto_introduttivo}</p>
+        <p>{contenutoIntroduttivo}</p>
       </li>
     )
     console.log('Articoli.js ->', ArticoliList)
