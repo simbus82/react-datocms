@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link} from 'react-router'
+import { Link } from 'react-router'
 import datocmsClient from './DatoCmsClient'
 
 class Articoli extends Component {
@@ -19,7 +19,7 @@ class Articoli extends Component {
     console.log('Articoli.js ->', articoli)
     const ArticoliList = articoli.map(({articoloId, titolo, contenutoIntroduttivo}) =>
       <li className='Articoli-item' key={articoloId}>
-        <Link to={`/articoli/${articoloId}`}>{titolo}</Link>
+        <Link to={`/articolo/${articoloId}`}>{titolo}</Link>
         <p>{contenutoIntroduttivo}</p>
       </li>
     )
